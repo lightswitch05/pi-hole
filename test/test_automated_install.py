@@ -539,6 +539,7 @@ def test_validate_ip(Pihole):
 
     test_address('192.168.1.1')
     test_address('127.0.0.1')
+    test_address('127.0.0.1:5335')
     test_address('255.255.255.255')
     test_address('255.255.255.256', False)
     test_address('255.255.256.255', False)
